@@ -25,13 +25,13 @@ spec:
         - name: MYSQL_ROOT_PASSWORD
           valueFrom:
             secretKeyRef:
-              key: mysecret
-              name: MYSQL_ROOT_PASSWORD
+              name: mysecret
+              key: MYSQL_ROOT_PASSWORD
         - name: MYSQL_DATABASE
           valueFrom: 
             configMapKeyRef:
-              key: configmap
-              name: MYSQL_DATABASE 
+              name: configmap
+              key: MYSQL_DATABASE 
         volumeMounts:
         - name: mysql-data
           mountPath: /mnt/mysql-data
