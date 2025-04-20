@@ -4,7 +4,7 @@ metadata:
   name: mysql-vpc 
   namespace: noteapp-ns
 spec:
-  storageClassName: manual
+  storageClassName: standard
   accessModes: 
     - ReadWriteOnce
   resources:
