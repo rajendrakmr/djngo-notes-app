@@ -3,6 +3,8 @@ kind: Deployment
 metadata:
   name: noteapp
   namespace: noteapp-ns
+  labels:
+    app: noteapp
 spec:
   selector:
     matchLabels:
