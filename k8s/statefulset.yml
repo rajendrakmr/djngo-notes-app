@@ -39,7 +39,7 @@ spec:
   - metadata:
       name: mysql-data
     spec:
-      storageClassName: "manual"
+      storageClassName: manual
       accessModes: [ "ReadWriteOnce" ]
       resources:
         requests:
