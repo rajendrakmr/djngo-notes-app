@@ -9,7 +9,7 @@ spec:
   selector:
     matchLabels:
       app: noteapp-mysql
-  serviceName: <ServiceName>
+  serviceName: mysql-service
   replicas: 2
   template:
     metadata:
